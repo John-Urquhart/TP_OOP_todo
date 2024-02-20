@@ -25,7 +25,7 @@ switch($url_parts[0]){
                 $todo = new Todo;
                 $properties = ['title', 'list_id', 'date', 'complete'];
                 $todo->hydrate($properties, $_POST);
-var_dump($_POST);
+// var_dump($_POST);
                 $todo->create();
                  echo '{"result": "success"}';
                 break;

@@ -20,7 +20,7 @@ class Model {
         $query_keys = implode(",", $this->db_fields);
         $query_placeholders = implode(",", $query_placeholders);
 
-
+debug ($field);
        $this->id = query(
            "INSERT INTO {$this->table} ($query_keys) VALUES ($query_placeholders)",
             $values
